@@ -24,8 +24,17 @@ header .container{
 header .logo{
     margin: 5px;
     color: var(--vermelho);
-    font-family: 'Arial Black', serif;
+    font-family: 'URW Gothic L', serif;
     font-size: 40px;
+    cursor: pointer;
+}
+
+.logo:hover
+{
+    transition: .5s;
+    color: var(--vermelho);
+    text-shadow: 0 0 10px var(--vermelho),
+    0 0 20px var(--vermelho);
 }
 
 header nav a{
@@ -39,14 +48,14 @@ header nav a:hover{
 }
 
 .filme-principal{
-    font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(../imgs/homem-aranha_1.jpg);
-    height: 400px;
-    background-size: cover;
+    width: max-content;
+    height:revert;
+    background: linear-gradient(to right, black 30%, transparent 70%), url(../imgs/homem-aranha_1.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    font-size: 16px;
 }
 
 .filme-principal .descricao{
