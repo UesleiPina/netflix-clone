@@ -10,7 +10,8 @@
 }
 
 body{
-    background-color: var(--preto);
+    background: linear-gradient(to right, black 30%, transparent 70%), url(../imgs/homem-aranha_1.jpg);
+    background-size: cover;
     font-family: 'Arial', 'Times', serif;
     color: white;
 }
@@ -24,33 +25,33 @@ header .container{
 header .logo{
     margin: 5px;
     color: var(--vermelho);
-    font-family: 'URW Gothic L', serif;
+    font-family: 'DejaVu Sans Condensed', serif;
     font-size: 40px;
     cursor: pointer;
 }
 
-.logo:hover
+header .logo:hover
 {
     transition: .5s;
     color: var(--vermelho);
     text-shadow: 0 0 10px var(--vermelho),
-    0 0 20px var(--vermelho);
+    0 0 30px var(--vermelho);
 }
 
 header nav a{
     text-decoration: none;      /*remove decoração html do texto*/
-    color: #AAA;
+    color: white;
     margin-right: 10px;
 }
 
 header nav a:hover{
-    color: #fff;
+    color: white;
+    text-shadow: 0 0 10px white,
+                 0 0 15px white;
 }
 
-.filme-principal{
-    width: max-content;
-    height:revert;
-    background: linear-gradient(to right, black 30%, transparent 70%), url(../imgs/homem-aranha_1.jpg);
+main .filme-principal{
+    width: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,18 +59,19 @@ header nav a:hover{
     font-size: 16px;
 }
 
-.filme-principal .descricao{
+main .filme-principal .descricao{
+    width: 70%;
     margin-bottom: 40px;
     margin-top: 10px;
 }
 
-.filme-principal .titulo{
+main .filme-principal .titulo{
     margin-top: 15%;
     font-size: 40px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
-.botao{
+main .botao{
     background-color: rgba(0,0,0,.50);
     border: none;
     color: white;
@@ -79,30 +81,30 @@ header nav a:hover{
     cursor: pointer;
 }
 
-.botao:hover{
+main .botao:hover{
     background-color: white;
     color: black;
-    transition: 3s ease all;
+    transition: 1s ease all;
 }
 
-.botao i{
+main .botao i{
     margin-right: 8px;
 }
 
-.container{
+main .container{
     margin-left: 20px;
 }
 
-.filme-principal .container{
+main .filme-principal .container{
     width: 70%;
 }
 
-.box-filme{
+main .box-filme{
     height: 100%;
     width: 100%;
     display: block;
 }
 
-.carrocel-filmes{
+main .carrocel-filmes{
     margin-top: 5px;
 }
